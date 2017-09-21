@@ -16,5 +16,5 @@ std::string FooZInternal(const std::string &str)
 
 std::string FooZ(const std::string &str)
 {
-	std::cout << FooA(FooZInternal(str)) << std::endl;
+	return FooA(FooZInternal(str));
 }
