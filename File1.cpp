@@ -6,13 +6,13 @@
  */
 
 #include "File1.h"
-//#include "FileA.h"
+#include "FileA.h"
 #include <iostream>
 
 void FooZ(const std::string &str)
 {
 	std::cout << FooZInternal(str) << std::endl;
-	//std::cout << FooA(str) << std::endl;
+	std::cout << FooA(str) << std::endl;
 }
 
 std::string FooZInternal(const std::string &str)
