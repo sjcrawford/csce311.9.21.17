@@ -9,9 +9,9 @@
 #include "File1.h"
 #include "FileA.h"
 
-void main()
+int main()
 {
-	FooZ("BlahBlah");
+	std::cout << FooZ("BlahBlah") << std::endl;
 	std::cout << std::endl;
-	FooA("BlahBlah");
+	std::cout << FooA("BlahBlah") << std::endl;
 }

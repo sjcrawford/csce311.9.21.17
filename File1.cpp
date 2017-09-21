@@ -9,14 +9,12 @@
 #include "FileA.h"
 #include <iostream>
 
-void FooZ(const std::string &str)
-{
-	std::cout << FooA(FooZInternal(str)) << std::endl;
-}
-
 std::string FooZInternal(const std::string &str)
 {
-	if(str.length() == 0) return "";
+	return str[0] + std::string("?") + ((str.length() > 1) ? FooZInternal(str.substr(1)) : std::string(""));
+}
 
-	return str[0] + std::string("?") + FooZ(str.substr(1));
+std::string FooZ(const std::string &str)
+{
+	std::cout << FooA(FooZInternal(str)) << std::endl;
 }

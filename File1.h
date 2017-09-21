@@ -10,7 +10,7 @@
 
 #include <string>
 
-void FooZ(const std::string &str);
+std::string FooZ(const std::string &str);
 
 
 #endif /* FILE1_H_ */
