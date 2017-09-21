@@ -11,8 +11,7 @@
 
 void FooZ(const std::string &str)
 {
-	std::cout << FooZInternal(str) << std::endl;
-	std::cout << FooA(str) << std::endl;
+	std::cout << FooA(FooZInternal(str)) << std::endl;
 }
 
 std::string FooZInternal(const std::string &str)
